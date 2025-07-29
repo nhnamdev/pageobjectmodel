@@ -34,12 +34,14 @@ public class BaseSetup {
     private static WebDriver initChromeDriver(String appURL) {
         System.out.println("Launching Chrome browser...");
         //Cho nay dang fix cung vi loi
-        System.setProperty("webdriver.chrome.driver", "D:\\ytb\\Tester\\PageObjectModel_POM\\src\\main\\resources\\drivers\\" + "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/" + "chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "D:\\ytb\\Tester\\PageObjectModel_POM\\src\\main\\resources\\drivers\\" + "chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
         System.out.println(">> WebDriver created: " + driver); // Kiểm tra driver có null không
 
         driver.manage().window().maximize();
+        //chuyen den appUrl
         driver.navigate().to(appURL);
 
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));

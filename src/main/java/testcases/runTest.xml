@@ -3,7 +3,7 @@
 
     <test name="ChromeTest">
         <parameter name="browserType" value="chrome"/>
-        <parameter name="appURL" value="https://example.com"/>
+        <parameter name="appURL" value="https://anhtester.startkatalyst.com/account/sign-in"/>
         <classes>
             <class name="testcases.SignInTest">
                 <methods>

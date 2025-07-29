@@ -67,8 +67,8 @@ public class SignInPage {
 
     public void enterEmail(String email) {
         WebElement emailTxtBox = driver.findElement(emailInput);
-        if (emailTxtBox.isDisplayed())
-            emailTxtBox.sendKeys(email);
+        Assert.assertTrue(emailTxtBox.isDisplayed(), "email input is not displayed");
+        emailTxtBox.sendKeys(email);
     }
 
     public void enterPassword(String password) {
