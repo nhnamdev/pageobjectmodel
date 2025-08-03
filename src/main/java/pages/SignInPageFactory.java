@@ -59,4 +59,9 @@ public class SignInPageFactory {
         wait.until(ExpectedConditions.elementToBeClickable(e));
         e.sendKeys(value);
     }
+
+    public void clickElement(WebElement e) {
+        wait.until(ExpectedConditions.elementToBeClickable(e));
+        e.click();
+    }
 }
