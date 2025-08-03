@@ -5,11 +5,18 @@
         <parameter name="browserType" value="chrome"/>
         <parameter name="appURL" value="https://anhtester.startkatalyst.com/account/sign-in"/>
         <classes>
-            <class name="testcases.SignInTest">
+            <class name="testcases.DashBoardTest">
                 <methods>
                     <include name="signIn"/>
+                    <include name="openDocument"/>
                 </methods>
             </class>
+            <!--            <class name="testcases.SignInTest">-->
+            <!--                <methods>-->
+            <!--                    <include name="signIn"/>-->
+            <!--                </methods>-->
+            <!--            </class>-->
+
         </classes>
     </test>
 </suite>

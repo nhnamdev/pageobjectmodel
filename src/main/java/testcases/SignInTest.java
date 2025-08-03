@@ -17,7 +17,7 @@ public class SignInTest extends BaseSetup {
         driver = getDriver();
     }
 
-    @Test()
+    @Test(priority = 1)
     public void signIn() throws Exception {
         System.out.println(driver);
         signInPage = new SignInPage(driver);
