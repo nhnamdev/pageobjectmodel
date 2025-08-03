@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b404eed9-8c03-46c1-9baa-f3ec19cbac1e" name="Changes" comment="tạo test plan">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SignInPageFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testcases/DashBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testcases/DashBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testcases/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testcases/SignInTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testcases/runTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testcases/runTest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +142,7 @@
       <workItem from="1753779673952" duration="4045000" />
       <workItem from="1753792934131" duration="1024000" />
       <workItem from="1753802900457" duration="237000" />
-      <workItem from="1754226945551" duration="377000" />
+      <workItem from="1754226945551" duration="2113000" />
     </task>
     <task id="LOCAL-00001" summary="init POM">
       <option name="closed" value="true" />
