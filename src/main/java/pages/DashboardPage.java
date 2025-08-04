@@ -4,6 +4,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -15,7 +17,7 @@ public class DashboardPage {
     private WebDriver driver;
 
     public String expectedTitle = "Dashboard";
-
+    @FindBy()
     public String expectedPageText = "My Profile";
 
     private By DocumentModule = By.xpath("//p[normalize-space()='Document Management']");
@@ -26,12 +28,17 @@ public class DashboardPage {
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
     public void openDocumentManagement() {
         driver.findElement(DocumentModule).click();
         //Đợi cho đến khi trang load xong với hàm bên dưới
         waitForPageLoaded();
+    }
+
+    public boolean verifyDashboardTitle() {
+        return driver.getTitle().equals(expectedTitle);
     }
 
     //Hàm đợi trang load xong rồi thao tác

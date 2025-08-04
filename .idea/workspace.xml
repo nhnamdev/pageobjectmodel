@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b404eed9-8c03-46c1-9baa-f3ec19cbac1e" name="Changes" comment="POM Factory">
+    <list default="true" id="b404eed9-8c03-46c1-9baa-f3ec19cbac1e" name="Changes" comment="POM Factory - Test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SignInPageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SignInPageFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testcases/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testcases/SignInTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +144,8 @@
       <workItem from="1753779673952" duration="4045000" />
       <workItem from="1753792934131" duration="1024000" />
       <workItem from="1753802900457" duration="237000" />
-      <workItem from="1754226945551" duration="2667000" />
+      <workItem from="1754226945551" duration="4527000" />
+      <workItem from="1754269457221" duration="1801000" />
     </task>
     <task id="LOCAL-00001" summary="init POM">
       <option name="closed" value="true" />
@@ -176,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754229706729</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="POM Factory - Test">
+      <option name="closed" value="true" />
+      <created>1754230182451</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1754230182451</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +197,7 @@
     <MESSAGE value="init POM" />
     <MESSAGE value="tạo test plan" />
     <MESSAGE value="POM Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="POM Factory" />
+    <MESSAGE value="POM Factory - Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="POM Factory - Test" />
   </component>
 </project>

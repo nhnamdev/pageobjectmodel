@@ -46,13 +46,14 @@ public class SignInPageFactory {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     // Chúng ta viết hàm signin không cần dùng các hàm bổ trợ enter hay click nữa
-    public void signin(String username, String password, String Pin) throws Exception {
+    public DashboardPage signin(String username, String password, String Pin) throws Exception {
         setText(emailInput, username);
         passwordInput.sendKeys(password);
         signinBtn.click();
         Thread.sleep(1000);
         pinInput.sendKeys(Pin);
         submitBtn.click();
+        return new DashboardPage(driver);
     }
 
     public void setText(WebElement e, String value) {
