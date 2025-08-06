@@ -1,7 +1,7 @@
-# 🧪 Page Object Model Automation Test
+#  Page Object Model Automation Test
 This project is an automated testing framework built with **Selenium WebDriver**, using the **Page Object Model (POM)** design pattern. It is designed for scalable, maintainable, and reusable UI tests, ideal for both small and large applications.
 ---
-## 📚 Tech Stack
+##  Tech Stack
 
 - **Language:** Java  
 - **Framework:** TestNG  
