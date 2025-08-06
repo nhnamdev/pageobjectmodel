@@ -1,5 +1,6 @@
 package pages;
 
+import base.ValidateHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,7 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class SignInPage {
-
+    ValidateHelper validateHelper;
     private WebDriver driver;
 
     private By headerPageText = By.xpath("//a[normalize-space()='Forgot Username/Password?']");
@@ -29,6 +30,7 @@ public class SignInPage {
     // class này đọc
     public SignInPage(WebDriver driver) {
         this.driver = driver;
+        this.validateHelper = new ValidateHelper(driver);
     }
 
     public String getSignInPageTitle() {
@@ -50,6 +52,9 @@ public class SignInPage {
 
     // Sau khi thực hiện click Submit thì khởi tạo trang DashboardPage
     public void signin(String username, String password, String Pin) throws Exception {
+        //dung validate helper
+        validateHelper.waitForPageLoaded(driver);
+        validateHelper.setText(emailInput, username);
         enterEmail(username);
         enterPassword(password);
         clickSignIn();

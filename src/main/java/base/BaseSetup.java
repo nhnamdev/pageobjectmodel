@@ -1,5 +1,6 @@
 package base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -33,10 +34,7 @@ public class BaseSetup {
     //Khởi tạo cấu hình của các Browser để đưa vào Switch Case
     private static WebDriver initChromeDriver(String appURL) {
         System.out.println("Launching Chrome browser...");
-        //Cho nay dang fix cung vi loi
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/" + "chromedriver.exe");
-//        System.setProperty("webdriver.chrome.driver", "D:\\ytb\\Tester\\PageObjectModel_POM\\src\\main\\resources\\drivers\\" + "chromedriver.exe");
-
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         System.out.println(">> WebDriver created: " + driver); // Kiểm tra driver có null không
 
@@ -52,6 +50,9 @@ public class BaseSetup {
     // Chạy hàm initializeTestBaseSetup trước hết khi class này được gọi
     @Parameters({"browserType", "appURL"})
     @BeforeClass
+    //Neu khong muon chay bang file xml thi them Optinal de truyen tham so
+//    public void initializeTestBaseSetup(@Optional("chrome") String browserType,
+//                                        @Optional("https://default-url.com") String appURL) {
     public void initializeTestBaseSetup(String browserType, String appURL) {
         try {
             // Khởi tạo driver và browser

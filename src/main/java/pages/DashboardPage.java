@@ -17,7 +17,7 @@ public class DashboardPage {
     private WebDriver driver;
 
     public String expectedTitle = "Dashboard";
-    @FindBy()
+    @FindBy(xpath = "//a[normalize-space()='Forgot Username/Password?']")
     public String expectedPageText = "My Profile";
 
     private By DocumentModule = By.xpath("//p[normalize-space()='Document Management']");

@@ -32,8 +32,9 @@ public class SignInTest extends BaseSetup {
     }
 
     @Test(priority = 2)
-    public void openDashboard() throws Exception {
+    public void openDashboard() {
 
         Assert.assertTrue(dashboardPage.verifyDashboardTitle());
     }
+
 }
